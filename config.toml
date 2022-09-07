@@ -1,7 +1,7 @@
 baseURL = 'https://codestory.me/'
 languageCode = 'en-us'
 title = 'CodeStory'
-theme = 'LoveIt'
+theme = 'loveit'
 defaultContentLanguage = "en"
 languageName = "English"
 hasCJKLanguage = false
