@@ -1,4 +1,4 @@
-baseURL = 'http://codestory.me/'
+baseURL = 'https://codestory.me/'
 languageCode = 'en-us'
 title = 'CodeStory'
 theme = 'LoveIt'
