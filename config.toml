@@ -2,7 +2,6 @@ baseURL = 'http://codestory.me/'
 languageCode = 'en-us'
 title = 'CodeStory'
 theme = 'LoveIt'
-themesDir = "../"
 defaultContentLanguage = "en"
 languageName = "English"
 hasCJKLanguage = false
