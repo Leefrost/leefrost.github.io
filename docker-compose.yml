@@ -5,7 +5,7 @@ services:
     image: klakegg/hugo:0.101.0
     command: server
     volumes:
-      - ./content:/src
+      - .:/src
     ports:
       - 1313:1313
 
