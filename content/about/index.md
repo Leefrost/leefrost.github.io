@@ -1,20 +1,24 @@
 ---
 title: "About me"
-date: 2019-08-02T11:04:49+08:00
+date: 2022-09-11T18:24:18.056Z
 draft: false
-description: "About me"
+description: "About me page"
+author: "Sergii Lischuk"
+authorLink: "https://codestory.me"
+lightgallery: true
 ---
 
-### Hi there, I'm Sergii Lischuk, [Leefrost](http://leefrost.github.io) 👋
+### Hi there, I'm Sergii Lischuk, [Leefrost](https://codestory.me) 👋
 
 #### I am doing programming magic since 2010
 
-- 💬 Ask me about .NET / JS development
-- 📫 How to reach me: sergii.lischuk@gmail.com
-- 🤔 Sharing some thoughts, ideas and solutions here: [Code story](http://leefrost.github.io)
-- 🏹 Passionate in: Machine learning / Data analysis / IOT
+- 💬 Ask me anything about .NET / JS development.
+- 📜 Learning Python and Go.
+- 📓 Writing tech articles on [Dev.to](https://dev.to/leefrost) and on [CodeStory.me](https://codestory.me).
+- 🔥 Passionate in Machine learning / Data analysis / IOT.
+- 🎙️ Working on tech and dev life podcasts (soon!)
 
-#### Contact with me:
+#### You can contact with me by:
 
 <div style="display: flex">
   <a href="mailto:sergii.lischuk@gmail.com">
@@ -38,7 +42,7 @@ description: "About me"
   </a>
 </div>
 
-#### Languages, frameworks and tools:
+#### I am using these on daily basis:
 
 <div style="display: flex">
   <a href="https://visualstudio.microsoft.com/">
@@ -90,7 +94,7 @@ description: "About me"
   </a>
 </div>
 
-#### Challenging in:
+#### I am challenging in:
 
 <div style="display: flex">
   <a href="http://codewars.com">
