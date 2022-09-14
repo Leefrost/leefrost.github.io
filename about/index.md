@@ -1,16 +1,17 @@
 # About me
 
 
-### Hi there, I'm Sergii Lischuk, [Leefrost](http://leefrost.github.io) 👋
+### Hi there, I'm Sergii Lischuk, [Leefrost](https://codestory.me) 👋
 
 #### I am doing programming magic since 2010
 
-- 💬 Ask me about .NET / JS development
-- 📫 How to reach me: sergii.lischuk@gmail.com
-- 🤔 Sharing some thoughts, ideas and solutions here: [Code story](http://leefrost.github.io)
-- 🏹 Passionate in: Machine learning / Data analysis / IOT
+- 💬 Ask me anything about .NET / JS development.
+- 📜 Learning Python and Go.
+- 📓 Writing tech articles on [Dev.to](https://dev.to/leefrost) and on [CodeStory.me](https://codestory.me).
+- 🔥 Passionate in Machine learning / Data analysis / IOT.
+- 🎙️ Working on tech and dev life podcasts (soon!)
 
-#### Contact with me:
+#### You can contact with me by:
 
 <div style="display: flex">
   <a href="mailto:sergii.lischuk@gmail.com">
@@ -34,7 +35,7 @@
   </a>
 </div>
 
-#### Languages, frameworks and tools:
+#### I am using these on daily basis:
 
 <div style="display: flex">
   <a href="https://visualstudio.microsoft.com/">
@@ -86,7 +87,7 @@
   </a>
 </div>
 
-#### Challenging in:
+#### I am challenging in:
 
 <div style="display: flex">
   <a href="http://codewars.com">
