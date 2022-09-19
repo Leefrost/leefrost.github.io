@@ -41,7 +41,7 @@ Location: If most of our audience is located in a country where the CDN has no s
 ### Examples
 Here are some widely used CDNs:
 
-Amazon CloudFront
-Google Cloud CDN
-Cloudflare CDN
-Fastly
+- Amazon CloudFront
+- Google Cloud CDN
+- Cloudflare CDN
+- Fastly
