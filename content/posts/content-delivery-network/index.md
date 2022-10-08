@@ -9,6 +9,8 @@ authorLink: "https://codestory.me"
 description: "CDN and daily problems"
 images: []
 resources:
+- name: "featured-image"
+  src: "featured-image.png"
 
 tags: ["system-design"]
 categories: ["Architecture"]
