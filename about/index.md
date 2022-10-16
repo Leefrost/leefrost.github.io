@@ -1,7 +1,15 @@
 # About me
 
 
-<image src="/images/profile.jpeg" caption="Sergii Lischuk" style="width:25%; border-radius:50%">
+<style>
+  .profile-image > a > img {
+    width: 25% !important;
+    border-radius: 50%;
+  }
+</style>
+
+{{< image src="/images/profile.jpeg" caption="Sergii Lischuk" class="profile-image">}}
+
 
 ### Hi there, I'm Sergii Lischuk, [Leefrost](https://codestory.me) 👋
 
