@@ -11,10 +11,8 @@ images: []
 resources:
 - name: "featured-image"
   src: "featured-image.png"
-
 tags: ["system-design"]
 categories: ["Architecture"]
-
 twemoji: false
 lightgallery: true
 ---

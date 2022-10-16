@@ -8,6 +8,8 @@ authorLink: "https://codestory.me"
 lightgallery: true
 ---
 
+<image src="/images/profile.jpeg" caption="Sergii Lischuk" style="width:25%; border-radius:50%">
+
 ### Hi there, I'm Sergii Lischuk, [Leefrost](https://codestory.me) 👋
 
 #### I am doing programming magic since 2010
