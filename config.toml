@@ -693,3 +693,80 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         Twitter = "Leefrost_"
         Email = "sergii.lischuk@gmail.com"
         RSS = true
+  [languages.ua]
+    weight = 2
+    languageCode = "ua"
+    languageName = "Українська"
+    hasCJKLanguage = false
+    copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+    [languages.ua.menu]
+      [[languages.ua.menu.main]]
+        weight = 1
+        identifier = "posts"
+        pre = ""
+        post = ""
+        name = "Пости"
+        url = "/posts/"
+        title = ""
+      [[languages.ua.menu.main]]
+        weight = 2
+        identifier = "tags"
+        pre = ""
+        post = ""
+        name = "Теги"
+        url = "/tags/"
+        title = ""
+      [[languages.ua.menu.main]]
+        weight = 3
+        identifier = "categories"
+        pre = ""
+        post = ""
+        name = "Категорії"
+        url = "/categories/"
+        title = ""
+      [[languages.ua.menu.main]]
+        weight = 4
+        identifier = "about"
+        pre = ""
+        post = ""
+        name = "Автор"
+        url = "/about/"
+        title = ""
+      [[languages.ua.menu.main]]
+        weight = 5
+        identifier = "github"
+        pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
+        post = ""
+        name = ""
+        url = "https://github.com/Leefrost"
+        title = "GitHub"
+    [languages.ua.params]
+      [languages.ua.params.search]
+        enable = true
+        type = "algolia"
+        contentLength = 4000
+        placeholder = ""
+        maxResultLength = 10
+        snippetLength = 30
+        highlightTag = "em"
+        absoluteURL = false
+        [languages.ua.params.search.algolia]
+          index = "index.ua"
+          appID = "PASDMWALPK"
+          searchKey = "b42948e51daaa93df92381c8e2ac0f93"
+      [languages.ua.params.home]
+        rss = 10
+        [languages.ua.params.home.profile]
+          enable = true
+          gravatarEmail = ""
+          avatarURL = "/images/avatar.png"
+          title = ""
+          subtitle = "Історія одного розробника."
+          typeit = true
+          social = true
+          disclaimer = ""
+      [languages.ua.params.social]
+        GitHub = "Leefrost"
+        Twitter = "Leefrost_"
+        Email = "sergii.lischuk@gmail.com"
+        RSS = true

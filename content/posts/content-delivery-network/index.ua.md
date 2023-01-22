@@ -1,18 +1,18 @@
 ---
-weight: 5
+weight: 1
 title: "Content delivery network (CDN)"
 date: 2022-09-16T19:22:16.915Z
 lastmod: 2022-09-16T19:22:16.915Z
 draft: false
 author: "Sergii Lischuk"
 authorLink: "https://codestory.me"
-description: "CDN and daily problems"
+description: "CDN"
 images: []
 resources:
 - name: "featured-image"
   src: "featured-image.png"
 tags: ["system-design"]
-categories: ["Architecture"]
+categories: ["Архітектура"]
 twemoji: false
 lightgallery: true
 ---
