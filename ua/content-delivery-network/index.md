@@ -1,45 +1,47 @@
-# Content delivery network (CDN)
+# Мережа доправлення (і розповсюдження) контенту (CDN)
 
 
-A content delivery network (CDN) is a geographically distributed group of servers that work together to provide fast delivery of internet content. Generally, static files such as HTML/CSS/JS, photos, and videos are served from CDN.
+Мережа доправлення (і розповсюдження) контенту (CDN) — це територіально розподілена група серверів, які працюють разом, щоб забезпечити швидку доставку Інтернет-вмісту. Як правило, статичні файли, такі як HTML/CSS/JS, фотографії та відео, розповсюджуються саме з CDN.
 
 <!--more-->
 
-## How does a CDN work?
+## Як це працює?
 
-In a CDN, the origin server contains the original versions of the content while the edge servers are numerous and distributed across various locations around the world.
+У CDN вихідний сервер містить оригінальні версії вмісту, тоді як периферійних серверів багато і вони розподілені в різних місцях по всьому світу.
 
-To minimize the distance between the visitors and the website's server, a CDN stores a cached version of its content in multiple geographical locations known as edge locations. Each edge location contains a number of caching servers responsible for content delivery to visitors within its proximity.
+Щоб мінімізувати відстань між відвідувачами та сервером веб-сайту, CDN зберігає кешовану версію свого вмісту в кількох географічних локаціях, відомих як периферійні сервери. Кожна переферійна локація містить кілька серверів кешування, відповідальних за доставку вмісту відвідувачам у безпосередній близькості від нього.
 
-Once the static assets are cached on all the CDN servers for a particular location, all subsequent website visitor requests for static assets will be delivered from these edge servers instead of the origin, thus reducing origin load and improving scalability.
+Після того, як статичні активи будуть кешовані на всіх серверах CDN для певного розташування, усі наступні запити відвідувачів веб-сайту на статичні активи будуть доставлені з цих периферійних серверів замість джерела, таким чином зменшуючи навантаження на джерело та покращуючи масштабованість.
 
-For example, when someone in the UK requests our website which might be hosted in the USA, they will be served from the closest edge location such as the London edge location. This is much quicker than having the visitor make a complete request to the origin server which will increase the latency.
+Наприклад, коли хтось у Великій Британії надсилає запит на наш веб-сайт, який може бути розміщений у США, він обслуговуватиметься з найближчої локації, наприклад, із Лондона. Це набагато швидше, ніж коли відвідувач робить повний запит на вихідний сервер, що збільшує затримку.
 
-## Types
+## Типи CDN
 
-CDNs are generally divided into two types:
+Загалом CDN ділиться на 2 підвиди:
 
 ### Push CDNs
 
-Push CDNs receive new content whenever changes occur on the server. We take full responsibility for providing content, uploading directly to the CDN, and rewriting URLs to point to the CDN. We can configure when content expires and when it is updated. Content is uploaded only when it is new or changed, minimizing traffic, but maximizing storage.
+Push CDN отримують новий вміст щоразу, коли відбуваються зміни на сервері. Ми беремо повну відповідальність за надання вмісту, завантаження безпосередньо в CDN і зміну URL-адреси, щоб вони вказували на CDN. Ми можемо налаштувати термін дії вмісту та його оновлення. Вміст завантажується лише тоді, коли він новий або змінений, мінімізуючи трафік, але максимізуючи пам’ять.
 
-Sites with a small amount of traffic or sites with content that isn't often updated work well with push CDNs. Content is placed on the CDNs once, instead of being re-pulled at regular intervals.
+Сайти з невеликим обсягом трафіку або сайти з вмістом, який не часто оновлюється, добре працюють із push CDN. Вміст розміщується на CDN один раз, замість того, щоб повторно витягуватися через регулярні проміжки часу.
 
 ### Pull CDNs
 
-In a Pull CDN situation, the cache is updated based on request. When the client sends a request that requires static assets to be fetched from the CDN if the CDN doesn't have it, then it will fetch the newly updated assets from the origin server and populate its cache with this new asset, and then send this new cached asset to the user.
+У ситуації Pull CDN кеш оновлюється на основі запиту. Коли клієнт надсилає запит, який вимагає отримання статичних ресурсів із CDN, якщо CDN їх не має, він отримує нещодавно оновлені ресурси з початкового сервера та заповнює свій кеш цим новим ресурсом, а потім надсилає це новий кешований ресурс для користувача.
 
-Contrary to the Push CDN, this requires less maintenance because cache updates on CDN nodes are performed based on requests from the client to the origin server. Sites with heavy traffic work well with pull CDNs, as traffic is spread out more evenly with only recently-requested content remaining on the CDN.
+На відміну від Push CDN, це вимагає менше обслуговування, оскільки оновлення кешу на вузлах CDN виконуються на основі запитів від клієнта до початкового сервера. Сайти з інтенсивним трафіком добре працюють із CDN за запитом, оскільки трафік розподіляється більш рівномірно, а на CDN залишається лише нещодавно запитуваний вміст.
 
-### Disadvantages
-As we all know good things come with extra costs, so let's discuss some disadvantages of CDNs:
+## Недоліки
 
-Extra charges: It can be expensive to use a CDN, especially for high-traffic services.
-Restrictions: Some organizations and countries have blocked the domains or IP addresses of popular CDNs.
-Location: If most of our audience is located in a country where the CDN has no servers, the data on our website may have to travel further than without using any CDN.
+Як ми всі знаємо, хороші речі пов’язані з додатковими витратами, тому давайте обговоримо деякі недоліки CDN:
 
-### Examples
-Here are some widely used CDNs:
+- Додаткова плата: використання CDN може бути дорогим, особливо для послуг із високим трафіком.
+- Обмеження: деякі організації та країни заблокували домени або IP-адреси популярних CDN.
+- Розташування: якщо більша частина нашої аудиторії знаходиться в країні, де CDN не має серверів, дані на нашому веб-сайті можуть переміщатися далі, ніж без CDN.
+
+## Приклади
+
+Найбільш відомі провайдери CDN:
 
 - Amazon CloudFront
 - Google Cloud CDN
