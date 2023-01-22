@@ -1,8 +1,8 @@
 ---
-title: "About me"
+title: "Автор"
 date: 2022-09-11T18:24:18.056Z
 draft: false
-description: "About me page"
+description: "Про автора"
 author: "Sergii Lischuk"
 authorLink: "https://codestory.me"
 lightgallery: true
@@ -15,20 +15,20 @@ lightgallery: true
   }
 </style>
 
-{{< image src="/images/profile.jpeg" caption="Sergii Lischuk" class="profile-image">}}
+{{< image src="/images/profile.jpeg" caption="Сергій Ліщук" class="profile-image">}}
 
 
-### Hi there, I'm Sergii Lischuk, [Leefrost](https://codestory.me) 👋
+### Привіт, я Сергій Ліщук, [Leefrost](https://codestory.me) 👋
 
-#### I am doing programming magic since 2010
+#### Я займаюсь кодовою магією з 2010
 
-- 💬 Ask me anything about .NET / JS development.
-- 📜 Learning Python and Go.
-- 📓 Writing tech articles on [Dev.to](https://dev.to/leefrost) and on [CodeStory.me](https://codestory.me).
-- 🔥 Passionate in Machine learning / Data analysis / IOT.
-- 🎙️ Working on tech and dev life podcasts (soon!)
+- 💬 Запитуй мене усе про .NET / JS.
+- 📜 Вивчаю Python і Go.
+- 📓 Пишу тут - [Dev.to](https://dev.to/leefrost) та тут - [CodeStory.me](https://codestory.me).
+- 🔥 Цікавлюсь ще Machine learning / Data analysis / IOT.
+- 🎙️ Працюю над подкастом про програмування (soon!)
 
-#### You can contact with me by:
+#### Мене можна знайти ось тут:
 
 <div style="display: flex">
   <a href="mailto:sergii.lischuk@gmail.com">
@@ -52,7 +52,7 @@ lightgallery: true
   </a>
 </div>
 
-#### I am using these on daily basis:
+#### Щодня я користуюсь:
 
 <div style="display: flex">
   <a href="https://visualstudio.microsoft.com/">
@@ -104,7 +104,7 @@ lightgallery: true
   </a>
 </div>
 
-#### I am challenging in:
+#### Трохи змагаюсь тут:
 
 <div style="display: flex">
   <a href="http://codewars.com">

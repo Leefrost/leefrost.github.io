@@ -47,14 +47,14 @@ In a Pull CDN situation, the cache is updated based on request. When the client 
 
 Contrary to the Push CDN, this requires less maintenance because cache updates on CDN nodes are performed based on requests from the client to the origin server. Sites with heavy traffic work well with pull CDNs, as traffic is spread out more evenly with only recently-requested content remaining on the CDN.
 
-### Disadvantages
+## Disadvantages
 As we all know good things come with extra costs, so let's discuss some disadvantages of CDNs:
 
-Extra charges: It can be expensive to use a CDN, especially for high-traffic services.
-Restrictions: Some organizations and countries have blocked the domains or IP addresses of popular CDNs.
-Location: If most of our audience is located in a country where the CDN has no servers, the data on our website may have to travel further than without using any CDN.
+- Extra charges: It can be expensive to use a CDN, especially for high-traffic services.
+- Restrictions: Some organizations and countries have blocked the domains or IP addresses of popular CDNs.
+- Location: If most of our audience is located in a country where the CDN has no servers, the data on our website may have to travel further than without using any CDN.
 
-### Examples
+## Examples
 Here are some widely used CDNs:
 
 - Amazon CloudFront
