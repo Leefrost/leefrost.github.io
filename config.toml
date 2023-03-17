@@ -675,8 +675,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         absoluteURL = false
         [languages.en.params.search.algolia]
           index = "index.en"
-          appID = "PASDMWALPK"
-          searchKey = "b42948e51daaa93df92381c8e2ac0f93"
+          appID = "1PCGRLPBQI"
+          searchKey = "7cab16713abb6b1606054ed6362a0584"
       [languages.en.params.home]
         rss = 10
         [languages.en.params.home.profile]
@@ -752,8 +752,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         absoluteURL = false
         [languages.ua.params.search.algolia]
           index = "index.ua"
-          appID = "PASDMWALPK"
-          searchKey = "b42948e51daaa93df92381c8e2ac0f93"
+          appID = "1PCGRLPBQI"
+          searchKey = "7cab16713abb6b1606054ed6362a0584"
       [languages.ua.params.home]
         rss = 10
         [languages.ua.params.home.profile]

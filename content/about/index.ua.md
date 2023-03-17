@@ -1,5 +1,5 @@
 ---
-title: "Автор"
+title: "Автор 1"
 date: 2022-09-11T18:24:18.056Z
 draft: false
 description: "Про автора"
@@ -15,12 +15,12 @@ lightgallery: true
   }
 </style>
 
-{{< image src="/images/profile.jpeg" caption="Сергій Ліщук" class="profile-image">}}
+{{< image src="/images/profile.jpeg" caption="" class="profile-image">}}
 
 
-### Привіт, я Сергій Ліщук, [Leefrost](https://codestory.me) 👋
+Привіт 👋, я Сергій Ліщук, [Leefrost](https://codestory.me)
 
-#### Я займаюсь кодовою магією з 2010
+Я чаклую над кодом з 2010
 
 - 💬 Запитуй мене усе про .NET / JS.
 - 📜 Вивчаю Python і Go.
@@ -104,7 +104,7 @@ lightgallery: true
   </a>
 </div>
 
-#### Трохи змагаюсь тут:
+#### Тримаю себе у формі ось тут:
 
 <div style="display: flex">
   <a href="http://codewars.com">
