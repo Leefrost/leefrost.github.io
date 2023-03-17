@@ -1,4 +1,4 @@
-# About me
+# 
 
 
 <style>
@@ -8,12 +8,12 @@
   }
 </style>
 
-{{< image src="/images/profile.jpeg" caption="Sergii Lischuk" class="profile-image">}}
+{{< image src="/images/profile.jpeg" caption="Its me 😎" class="profile-image">}}
 
 
-### Hi there, I'm Sergii Lischuk, [Leefrost](https://codestory.me) 👋
+Hi there 👋, I'm Sergii Lischuk, [Leefrost](https://codestory.me) 
 
-#### I am doing programming magic since 2010
+I am doing programming magic since 2010.
 
 - 💬 Ask me anything about .NET / JS development.
 - 📜 Learning Python and Go.
@@ -21,7 +21,7 @@
 - 🔥 Passionate in Machine learning / Data analysis / IOT.
 - 🎙️ Working on tech and dev life podcasts (soon!)
 
-#### You can contact with me by:
+👩‍💻 You can contact with me by:
 
 <div style="display: flex">
   <a href="mailto:sergii.lischuk@gmail.com">
@@ -45,7 +45,7 @@
   </a>
 </div>
 
-#### I am using these on daily basis:
+⚡ I am using these on daily basis:
 
 <div style="display: flex">
   <a href="https://visualstudio.microsoft.com/">
@@ -97,7 +97,7 @@
   </a>
 </div>
 
-#### I am challenging in:
+🏅 I am challenging in:
 
 <div style="display: flex">
   <a href="http://codewars.com">

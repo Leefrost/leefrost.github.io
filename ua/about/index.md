@@ -8,7 +8,7 @@
   }
 </style>
 
-{{< image src="/images/profile.jpeg" caption="Я на фото :)" class="profile-image">}}
+{{< image src="/images/profile.jpeg" caption="Я на фото 😎" class="profile-image">}}
 
 
 Привіт 👋, я Сергій Ліщук, [Leefrost](https://codestory.me)
@@ -21,7 +21,7 @@
 - 🔥 Цікавлюсь ще Machine learning / Data analysis / IOT.
 - 🎙️ Працюю над подкастом про програмування (soon!)
 
-#### Мене можна знайти ось тут:
+👩‍💻 Мене можна знайти ось тут:
 
 <div style="display: flex">
   <a href="mailto:sergii.lischuk@gmail.com">
@@ -45,7 +45,7 @@
   </a>
 </div>
 
-#### Щодня я користуюсь:
+⚡ Щодня я користуюсь:
 
 <div style="display: flex">
   <a href="https://visualstudio.microsoft.com/">
@@ -97,7 +97,7 @@
   </a>
 </div>
 
-#### Тримаю себе у формі ось тут:
+🏅 Тримаю себе у формі ось тут:
 
 <div style="display: flex">
   <a href="http://codewars.com">
