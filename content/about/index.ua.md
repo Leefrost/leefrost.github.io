@@ -1,5 +1,4 @@
 ---
-title: "Автор 1"
 date: 2022-09-11T18:24:18.056Z
 draft: false
 description: "Про автора"
@@ -15,7 +14,7 @@ lightgallery: true
   }
 </style>
 
-{{< image src="/images/profile.jpeg" caption="" class="profile-image">}}
+{{< image src="/images/profile.jpeg" caption="Я на фото :)" class="profile-image">}}
 
 
 Привіт 👋, я Сергій Ліщук, [Leefrost](https://codestory.me)
