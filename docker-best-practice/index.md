@@ -5,8 +5,6 @@ Development was always a way of evolution. The evolution of modern programming d
 
 <!--more-->
 
-Development was always a way of evolution. The evolution of modern programming development brings a lot of techniques and requirements - its hard to imagine today's programming without high-level frameworks, containers, cloud computing or special data storages (even if they are not necessary). Working with some of them, I would like to share small notes about the containerization, especially with Docker containers. 
-
 ## 7 best practices for building containers
 
 Kubernetes Engine is a great place to run your workloads at scale. But before being able to use Kubernetes, you need to containerize your applications. You can run most applications in a Docker container without too much hassle. However, effectively running those containers in production and streamlining the build process is another story. There are a number of things to watch out for that will make your security and operations teams happier. This post provides tips and best practices to help you effectively build containers.
@@ -40,7 +38,7 @@ In the new version, the result of the pip command will be cached and will not be
 
 ### 4. Remove unnecessary tools
 
-Reducing the attack surface of your host system is always a good idea, and it’s much easier to do with containers than with traditional systems. Remove everything that the application doesn’t need from your container. Or better yet, include just your application in a distroless or scratch image. You should also, if possible, make the filesystem of the container read-only. This should get you some excellent feedback from your security team during your performance review.
+Reducing the attack surface of your host system is always a good idea, and it’s much easier to do with containers than with traditional systems. Remove everything that the application doesn’t need from your container. Or better yet, include just your application in a `distroless` or scratch image. You should also, if possible, make the filesystem of the container read-only. This should get you some excellent feedback from your security team during your performance review.
 
 ### 5. Build the smallest image possible
 
