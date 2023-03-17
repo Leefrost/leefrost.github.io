@@ -1,4 +1,4 @@
-# Автор 1
+# 
 
 
 <style>
@@ -8,7 +8,7 @@
   }
 </style>
 
-{{< image src="/images/profile.jpeg" caption="" class="profile-image">}}
+{{< image src="/images/profile.jpeg" caption="Я на фото :)" class="profile-image">}}
 
 
 Привіт 👋, я Сергій Ліщук, [Leefrost](https://codestory.me)
