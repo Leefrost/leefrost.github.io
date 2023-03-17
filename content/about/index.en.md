@@ -1,8 +1,7 @@
 ---
-title: "About me"
 date: 2022-09-11T18:24:18.056Z
 draft: false
-description: "About me page"
+description: "Code Story - Author"
 author: "Sergii Lischuk"
 authorLink: "https://codestory.me"
 lightgallery: true
@@ -15,12 +14,12 @@ lightgallery: true
   }
 </style>
 
-{{< image src="/images/profile.jpeg" caption="Sergii Lischuk" class="profile-image">}}
+{{< image src="/images/profile.jpeg" caption="Its me 😎" class="profile-image">}}
 
 
-### Hi there, I'm Sergii Lischuk, [Leefrost](https://codestory.me) 👋
+Hi there 👋, I'm Sergii Lischuk, [Leefrost](https://codestory.me) 
 
-#### I am doing programming magic since 2010
+I am doing programming magic since 2010.
 
 - 💬 Ask me anything about .NET / JS development.
 - 📜 Learning Python and Go.
@@ -28,7 +27,7 @@ lightgallery: true
 - 🔥 Passionate in Machine learning / Data analysis / IOT.
 - 🎙️ Working on tech and dev life podcasts (soon!)
 
-#### You can contact with me by:
+👩‍💻 You can contact with me by:
 
 <div style="display: flex">
   <a href="mailto:sergii.lischuk@gmail.com">
@@ -52,7 +51,7 @@ lightgallery: true
   </a>
 </div>
 
-#### I am using these on daily basis:
+⚡ I am using these on daily basis:
 
 <div style="display: flex">
   <a href="https://visualstudio.microsoft.com/">
@@ -104,7 +103,7 @@ lightgallery: true
   </a>
 </div>
 
-#### I am challenging in:
+🏅 I am challenging in:
 
 <div style="display: flex">
   <a href="http://codewars.com">
