@@ -6,7 +6,7 @@ lastmod: 2023-03-12T00:00:00.000Z
 draft: false
 author: "Sergii Lischuk"
 authorLink: "https://codestory.me"
-description: "Docker and containerization"
+description: "7 good advices to stay in shape with container building"
 images: []
 resources:
 - name: "featured-image"

@@ -1,71 +1,69 @@
 ---
 weight: 2
-title: "7 практик щоб працювати з Докером на повну"
+title: "7 практик щоб працювати з Docker на повну"
 date: 2023-03-12T00:00:00.000Z
 lastmod: 2023-03-12T00:00:00.000Z
 draft: false
-author: "Sergii Lischuk"
+author: "Сергій Ліщук"
 authorLink: "https://codestory.me"
-description: "Docker and containerization"
+description: "Корисні поради для роботи з Docker"
 images: []
 resources:
 - name: "featured-image"
   src: "featured-image.png"
-tags: ["docker", "containerization"]
-categories: ["Deployment"]
+tags: ["докер", "контейнеризація"]
+categories: ["Розгортання"]
 twemoji: false
 lightgallery: true
 ---
 
-Development was always a way of evolution. The evolution of modern programming development brings a lot of techniques and requirements - its hard to imagine today's programming without high-level frameworks, containers, cloud computing or special data storages (even if they are not necessary). Working with some of them, I would like to share small notes about the containerization, especially with Docker containers.
+Програмування - це завжди шлях еволюції. Власне еволюція сучасних рішень розробки (мов, оточення, тощо) принесла чимало нових підходів та вимог - важко уявити сучасне програмування без високорівневих фреймворків, контейнерів, хмарного обчислення чи спеціальних дата сховищ. Хочу поділитись кількома практичними порадами саме для роботи з контейнерами та контейнеризацією, зокрема щодо Docker та його контейнерів.
 
 <!--more-->
 
-Development was always a way of evolution. The evolution of modern programming development brings a lot of techniques and requirements - its hard to imagine today's programming without high-level frameworks, containers, cloud computing or special data storages (even if they are not necessary). Working with some of them, I would like to share small notes about the containerization, especially with Docker containers. 
+## 7 корисних практик при роботі з Docker контейнерами
 
-## 7 best practices for building containers
+Kubernetes Engine — це чудове місце для запуску ваших робочих процесів у масштабі. Але перш ніж використовувати Kubernetes, вам потрібно контейнеризувати свої програми. Ви можете запускати більшість програм у контейнері Docker без зайвих клопотів. Однак ефективне використання цих контейнерів на практиці та оптимізація процесу збирання контейнеру — це уже зовсім інші речі. Слід звернути увагу на ряд особливостей, які зроблять ваші команди розробників і тестувальників щасливими. Ця публікація містить поради та найкращі практики, які допоможуть вам ефективно створювати контейнери.
 
-Kubernetes Engine is a great place to run your workloads at scale. But before being able to use Kubernetes, you need to containerize your applications. You can run most applications in a Docker container without too much hassle. However, effectively running those containers in production and streamlining the build process is another story. There are a number of things to watch out for that will make your security and operations teams happier. This post provides tips and best practices to help you effectively build containers.
+### 1. Один контейнер - одна програма
 
-### 1. Package a single application per container
+Контейнер працює найкраще, коли в ньому працює лише одна програма. Ця програма повинна мати єдиний батьківський процес - завершення якого приведе до зупинки контейнера. Це дуже корисно. Не запускайте PHP і MySQL в одному контейнері: це важче налагоджувати, сигнали Linux не оброблятимуться належним чином, ви не можете горизонтально масштабувати контейнери PHP тощо.
 
-A container works best when a single application runs inside it. This application should have a single parent process. For example, do not run PHP and MySQL in the same container: it’s harder to debug, Linux signals will not be properly handled, you can’t horizontally scale the PHP containers, etc. This allows you to tie together the lifecycle of the application to that of the container.
+### 2. Правильно обробляйте PID 1, сигнали та зомбі процеси
 
-### 2. Properly handle PID 1, signal handling, and zombie processes
+Kubernetes і Docker надсилають сигнали Linux вашій програмі всередині контейнера, щоб зупинити її. Вони надсилають ці сигнали процесу з ідентифікатором (PID) 1. Якщо ви хочете, щоб ваша програма зупинялася правильно і коли це необхідно, вам потрібно правильно обробляти вхідні сигнали.
 
-Kubernetes and Docker send Linux signals to your application inside the container to stop it. They send those signals to the process with the process identifier (PID) 1. If you want your application to stop gracefully when needed, you need to properly handle those signals. 
+### 3. Використовуйте правильно кеш збірки у Docker
 
-### 3. Optimize for the Docker build cache
+Docker може кешувати рівні ваших збірок, щоб прискорити повторні збірки. Це дуже корисна функція, але вона має певні особливості поведінки, які потрібно враховувати під час написання файлів Docker. Наприклад, ви повинні додати код вашої програми якомога пізніше у Dockerfile, щоб базова збірка та залежності вашої програми кешувалися й не перебудовувалися під час кожної збірки.
 
-Docker can cache layers of your images to accelerate later builds. This is a very useful feature, but it introduces some behaviors that you need to take into account when writing your Dockerfiles. For example, you should add the source code of your application as late as possible in your Dockerfile so that the base image and your application’s dependencies get cached and aren’t rebuilt on every build.
-
-Take this Dockerfile as example:
+Наприклад:
 ```docker
 FROM python:3.5
 COPY my_code src
 RUN pip install my_requirements
 ```
 
-You should swap the last two lines:
+Вам варто змінити наступні стрічки коду:
 ```docker
 FROM python:3.5
 RUN pip install my_requirements
 COPY my_code src
 ```
-In the new version, the result of the pip command will be cached and will not be rerun each time the source code changes.
+У новій версії результати роботи команди pip будуть закешовані для подальших збірок.
 
-### 4. Remove unnecessary tools
+### 4. Видаляйте непотрібні залежності
 
-Reducing the attack surface of your host system is always a good idea, and it’s much easier to do with containers than with traditional systems. Remove everything that the application doesn’t need from your container. Or better yet, include just your application in a distroless or scratch image. You should also, if possible, make the filesystem of the container read-only. This should get you some excellent feedback from your security team during your performance review.
+Зменшення поверхні для атак вашої хост-системи завжди є хорошою ідеєю, і це набагато легше зробити з контейнерами, ніж із традиційними системами. Видаліть усе, що програмі не потрібно зі свого контейнера. Або, ще краще, додайте лише свою програму до збірки без дистрибутива або іншої початкової збірки. Ви також повинні, якщо можливо, зробити файлову систему контейнера доступною лише для читання. Це забезпечить Вам найкращу безпеку разом з продуктивністю вашої програми
 
-### 5. Build the smallest image possible
+### 5. Проектуйте та створюйте наймешн можливу збірку
 
-Who likes to download hundreds of megabytes of useless data? Aim to have the smallest images possible. This decreases download times, cold start times, and disk usage. You can use several strategies to achieve that: start with a minimal base image, leverage common layers between images and make use of Docker’s multi-stage build feature.
+Хто любить завантажувати сотні мегабайт непотрібних даних? Завжди тримайте одним з найкращих показників - розмір збірки - на максимально низькому рівні. Це зменшує час завантаження, час холодного запуску та використання диска. Ви можете використати кілька стратегій, щоб досягти цього: почати з мінімальної базової збірки, використати загальні рівні між збірками та не забувайте про багатоетапну збірку у Docker.
 
-### 6. Properly tag your images
+### 6. Правильно позначайте свої збірки
 
-Tags are how the users choose which version of your image they want to use. There are two main ways to tag your images: Semantic Versioning, or using the Git commit hash of your application. Whichever your choose, document it and clearly set the expectations that the users of the image should have. Be careful: while users expect some tags —like the “latest” tag— to move from one image to another, they expect other tags to be immutable, even if they are not technically so. For example, once you have tagged a specific version of your image, with something like “1.2.3”, you should never move this tag.
+Теги – це те, як користувачі вибирають, яку версію вашої збірки вони хочуть використовувати. Існує два основних способи позначення тегами: семантичне керування версіями або використання хешу фіксації Git вашої програми. Незалежно від того, який ви виберете, документуйте це та чітко визначте очікування, які мають мати користувачі зібрки. Будьте обережні: хоча користувачі очікують, що деякі теги, як-от тег "latest", будуть мігрувати з однієї збірки на іншу, а також, що інші теги будуть залишатись незмінними, навіть якщо технічно це не так. Наприклад, після того, як ви позначили певну версію своєї збірки тегом «1.2.3», ви ніколи не повинні переміщувати цей тег на інші збірки.
 
-### 7. Carefully consider whether to use a public image
+### 7. Уважно подумайте, чи варто використовувати публічні збірки
 
-Using public images can be a great way to start working with a particular piece of software. However, using them in production can come with a set of challenges, especially in a high-constraint environment. You might need to control what’s inside them, or you might not want to depend on an external repository, for example. On the other hand, building your own images for every piece of software you use is not trivial, particularly because you need to keep up with the security updates of the upstream software. Carefully weigh the pros and cons of each for your particular use-case, and make a conscious decision.
+Використання загальнодоступних збірок може бути чудовим способом почати роботу з певним програмним забезпеченням. Однак їх використання у під час релізу чи тестування може спричинити ряд проблем, особливо в середовищі з високими обмеженнями. Можливо, вам знадобиться контролювати те, що в них знаходиться, або ви можете не залежати від зовнішнього сховища, наприклад. З іншого боку, створення власних збірок для кожної частини програмного забезпечення, яке ви використовуєте, не є тривіальним, особливо тому, що вам потрібно йти в ногу з оновленнями безпеки попереднього програмного забезпечення. Ретельно зважте плюси та мінуси кожного для конкретного випадку використання та прийміть свідоме рішення.
