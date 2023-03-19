@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "algo": "hugo-algolia",
+    "algo-and-send": "hugo-algolia -s"
+  },
+  "dependencies": {
+    "hugo-algolia": "^1.2.14"
+  }
+}

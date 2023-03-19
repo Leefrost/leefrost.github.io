@@ -163,9 +163,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # whether to use the absolute URL based on the baseURL in search index
     absoluteURL = false
     [params.search.algolia]
-      index = ""
-      appID = ""
-      searchKey = ""
+      index = "codestory"
+      appID = "1PCGRLPBQI"
+      searchKey = "7cab16713abb6b1606054ed6362a0584"
 
   # Home page config
   [params.home]
@@ -674,7 +674,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         highlightTag = "em"
         absoluteURL = false
         [languages.en.params.search.algolia]
-          index = "index.en"
+          index = "codestory"
           appID = "1PCGRLPBQI"
           searchKey = "7cab16713abb6b1606054ed6362a0584"
       [languages.en.params.home]
@@ -751,7 +751,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         highlightTag = "em"
         absoluteURL = false
         [languages.ua.params.search.algolia]
-          index = "index.ua"
+          index = "codestory"
           appID = "1PCGRLPBQI"
           searchKey = "7cab16713abb6b1606054ed6362a0584"
       [languages.ua.params.home]
