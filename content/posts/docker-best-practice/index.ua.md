@@ -1,4 +1,6 @@
 ---
+uri: "docker-best-practice"
+objectID: "docker-best-practice-ua"
 weight: 2
 title: "7 практик щоб працювати з Docker на повну"
 date: 2023-03-12T00:00:00.000Z

@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "algo": "hugo-algolia",
-    "algo-and-send": "hugo-algolia -s"
+    "algo": "hugo-algolia -i \"content/posts/**\"",
+    "algo-and-send": "hugo-algolia -i \"content/posts/**\" -s"
   },
   "dependencies": {
     "hugo-algolia": "^1.2.14"

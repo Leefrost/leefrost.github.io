@@ -1,4 +1,6 @@
 ---
+uri: "content-delivery-network"
+objectID: "content-delivery-network-ua"
 weight: 1
 title: "Мережа доставки (і розповсюдження) контенту (CDN)"
 date: 2022-09-16T19:22:16.915Z

@@ -1,4 +1,6 @@
 ---
+uri: "docker-best-practice"
+objectID: "docker-best-practice-en"
 weight: 2
 title: "7 best practices for building containers"
 date: 2023-03-12T00:00:00.000Z

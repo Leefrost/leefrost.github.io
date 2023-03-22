@@ -1,4 +1,6 @@
 ---
+uri: "content-delivery-network"
+objectID: "content-delivery-network-en"
 weight: 1
 title: "Content delivery network (CDN)"
 date: 2022-09-16T19:22:16.915Z
