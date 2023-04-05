@@ -1,4 +1,4 @@
-# Caching responses in http client
+# Caching responses in HttpClient
 
 
 Working with high-load systems or with a system where it is important to have a good response time - the cache is a first citizen. This package contains lightweight, self-written, in-memory cache implementation to catch and store responses based on their status code. The configuration is pretty flexible and gives opportunity to set pair between cache time and response code.
