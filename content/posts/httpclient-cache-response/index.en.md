@@ -2,13 +2,13 @@
 uri: "http-client-cache-responses"
 objectID: "http-client-cache-responses-en"
 weight: 3
-title: "Caching responses in http client"
+title: "Caching responses in HttpClient"
 date: 2023-03-12T00:00:00.000Z
 lastmod: 2023-03-12T00:00:00.000Z
 draft: false
 author: "Sergii Lischuk"
 authorLink: "https://codestory.me"
-description: "How to cache responses for http client"
+description: "Caching responses for HttpClient"
 images: []
 resources:
 - name: "featured-image"
